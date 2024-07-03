@@ -16,6 +16,10 @@
             font-family: GoodMood;
             src: url("fonts/good-mood.ttf")
         }
+        @font-face {
+            font-family: PWSimpleHandwriting;
+            src: url('fonts/PWSimpleHandwriting.ttf');
+        }
 
         @media screen and (max-width: 600px) {
             .content {
@@ -112,13 +116,23 @@
             top: 70%;
         }
 
+        .header1{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+        }
+
         .kilas-balik {
+            font-family: Font1;
+            font-weight: 700;
+            font-size: 24px;
             padding-left: 5%;
         }
 
         .periode {
-            float: right;
+            font-family: Font1;
             padding-right: 5%;
+            align-self: flex-end;
         }
 
         .hr1 {
@@ -136,6 +150,8 @@
         }
 
         .p-kilas-balik {
+            font-family: PWSimpleHandwriting;
+            font-size: 20px;
             text-align: center;
             margin: 0%;
             padding: 0%;
@@ -149,7 +165,7 @@
             top: 131%;
             margin: 0%;
             padding: 0%;
-            margin-right: -5%;
+            margin-right: -15%;
         }
 
         #nyalakan3 {
@@ -160,7 +176,7 @@
             top: 135%;
             margin: 0%;
             padding: 0%;
-            margin-right: -10%;
+            margin-right: -20%;
         }
 
         .rekap-img {
@@ -604,6 +620,7 @@
         }
 
         .p-thankgod {
+            font-family: PWSimpleHandwriting;
             text-align: center;
             margin: 0%;
             padding: 0%;
@@ -613,6 +630,7 @@
         }
 
         #thankgod2 {
+            font-family: PWSimpleHandwriting;
             top: 5.7%;
             font-size: 16px;
             left: 49%;
@@ -620,6 +638,7 @@
         }
 
         #thankgod3 {
+            font-family: PWSimpleHandwriting;
             top: 7.1%;
             font-size: 16px;
             left: 49%;
@@ -627,6 +646,7 @@
         }
 
         #thankgod4 {
+            font-family: PWSimpleHandwriting;
             top: 9.7%;
             font-size: 32px;
             left: 49%;
@@ -980,6 +1000,7 @@
         }
 
         #poinseru8 {
+            font-family: Font1;
             top: 118%;
             left: 45%;
             text-align: left;
@@ -1097,8 +1118,10 @@
             </tr>
             <tr>
                 <td>
-                    <span class="kilas-balik">Kilas Balik</span>
-                    <span class="periode">Juni 2022</span>
+                    <span class="header1">
+                        <span class="kilas-balik">Kilas Balik</span>
+                        <span class="periode">Juni 2022</span>
+                    </span>
                     <hr class="hr1">
                     <hr class="hr2">
                     <p class="p-kilas-balik">Tak terasa sudah masuk bulan yang baru</p>
@@ -1307,7 +1330,7 @@
             <tr>
                 <td>
                     <span class="footer1" style="margin-top: 230%;"></span>
-                    <span class="footer2" style="margin-top: 228%;"></span>
+                    <span class="footer2" style="margin-top: 600%;"></span>
                 </td>
             </tr>
         </table>
