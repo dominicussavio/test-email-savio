@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes Email Marketing Savio</title>
+    <style type="text/css">
+        @font-face {
+            font-family: Font1;
+            src: url("fonts/dm-sans.ttf")
+        }
+
+        @font-face {
+            font-family: GoodMood;
+            src: url("fonts/good-mood.ttf")
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                width: 100% !important;
+                display: block !important;
+                padding: 10px !important;
+            }
+
+            .header,
+            .body,
+            .footer {
+                padding: 20px !important;
+            }
+        }
+
+        body {
+            margin: 0;
+            background-color: #cccccc;
+            padding: 20px !important;
+            overflow: auto;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #cccccc;
+            padding-bottom: 60px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .main {
+            background-color: #86a1aa;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #171a1b;
+        }
+
+        .belong-to {
+            text-align: center;
+            margin-left: 0 auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: #000000;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .jurnal {
+            rotate: 355deg;
+            top: 15%;
+            font-size: 24px;
+            font-family: Font1;
+        }
+
+        .nama-customer {
+            rotate: 355deg;
+            top: 32%;
+            font-size: 56px;
+            font-family: GoodMood;
+        }
+
+        .line-img {
+            rotate: 355deg;
+            top: 70%;
+        }
+
+        .kilas-balik {
+            padding-left: 5%;
+        }
+
+        .periode {
+            float: right;
+            padding-right: 5%;
+        }
+
+        .hr1 {
+            border: 1px solid black;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+
+        .hr2 {
+            border: 1px solid #505050;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        .p-kilas-balik {
+            text-align: center;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #nyalakan1 {
+            top: 128%;
+        }
+
+        #nyalakan2 {
+            top: 131%;
+            margin: 0%;
+            padding: 0%;
+            margin-right: -5%;
+        }
+
+        #nyalakan3 {
+            top: 132%;
+        }
+
+        #nyalakan4 {
+            top: 135%;
+            margin: 0%;
+            padding: 0%;
+            margin-right: -10%;
+        }
+
+        .rekap-img {
+            text-align: center;
+            margin-left: 0 auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            rotate: 1deg;
+        }
+
+        .recap-centered {
+            position: absolute;
+            top: 6%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+        }
+
+        .line {
+            background-color: black;
+            position: absolute;
+            top: -930%;
+            left: 50%;
+            width: 76%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+        }
+
+        .text-and-line {
+            position: relative;
+            padding: 10px;
+        }
+
+        .line-vertical {
+            background-color: black;
+            position: absolute;
+            rotate: 90deg;
+            top: -120%;
+            left: 38%;
+            width: 25%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+        }
+
+        .p-float-left {
+            float: left;
+            margin-left: 13%;
+            position: absolute;
+            top: 21%;
+        }
+
+        .p-float-right {
+            float: right;
+            margin-right: 0 auto;
+            position: absolute;
+            top: 21%;
+            right: 20%;
+        }
+
+        .transfer {
+            position: relative;
+            margin-top: 2%;
+            left: -5%;
+            rotate: 2deg;
+        }
+
+        .transfer1 {
+            position: absolute;
+            left: 21%;
+            top: 11%;
+            rotate: 2deg;
+        }
+
+        .transfer2 {
+            background-color: black;
+            position: absolute;
+            bottom: 63%;
+            left: 28%;
+            width: 14%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+            rotate: 2deg;
+        }
+
+        .transfer3 {
+            position: absolute;
+            float: left;
+            left: 18%;
+            top: 11%;
+        }
+
+        .transfer4 {
+            background-color: black;
+            position: absolute;
+            float: left;
+            top: 50%;
+            left: 25%;
+            width: 14%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+        }
+
+        .transfer5 {
+            position: absolute;
+            float: left;
+            left: 17%;
+            top: 45%;
+        }
+
+        .tarik-tunai {
+            position: relative;
+            margin-top: 2%;
+            text-align: center;
+            rotate: 358deg;
+        }
+
+        .tarik-tunai1 {
+            position: absolute;
+            left: 42%;
+            top: 5%;
+            rotate: 358deg;
+            font-size: 15px;
+        }
+
+        .tarik-tunai2 {
+            background-color: black;
+            position: absolute;
+            bottom: 73%;
+            left: 50%;
+            width: 14%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+            rotate: 356deg;
+        }
+
+        .tarik-tunai3 {
+            position: absolute;
+            left: 42%;
+            top: 11%;
+        }
+
+        .tarik-tunai4 {
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 14%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+        }
+
+        .tarik-tunai5 {
+            position: absolute;
+            left: 43%;
+            top: 45%;
+        }
+
+        .pembayaran {
+            position: relative;
+            margin-top: 2%;
+            right: -5%;
+            rotate: 2deg;
+        }
+
+        .pembayaran1 {
+            position: absolute;
+            font-size: 13px;
+            right: 20%;
+            top: 2%;
+            rotate: 2deg;
+        }
+
+        .pembayaran2 {
+            background-color: black;
+            position: absolute;
+            bottom: 65%;
+            right: 14%;
+            width: 14%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+            rotate: 2deg;
+        }
+
+        .pembayaran3 {
+            font-size: 14px;
+            position: absolute;
+            float: right;
+            right: 17%;
+            top: 10%;
+        }
+
+        .pembayaran4 {
+            background-color: black;
+            position: absolute;
+            float: right;
+            top: 58%;
+            right: 12%;
+            width: 14%;
+            transform: translate(-50%, -50%);
+            border-bottom: 1px solid black;
+        }
+
+        .pembayaran5 {
+            position: absolute;
+            float: right;
+            right: 20%;
+            top: 48%;
+        }
+
+        .p-transfer {
+            position: relative;
+            margin-top: 1%;
+            left: -10%;
+            font-size: 48px;
+            color: #b6c8cc;
+        }
+
+        .p-tarik-tunai {
+            position: relative;
+            margin-top: 1%;
+            left: 1%;
+            font-size: 48px;
+            color: #b6c8cc;
+        }
+
+        .p-pembayaran {
+            position: relative;
+            margin-top: 1%;
+            left: 10%;
+            font-size: 48px;
+            color: #b6c8cc;
+        }
+
+        .hemat1 {
+            position: relative;
+            margin-top: 2%;
+            float: left;
+            left: 15%;
+        }
+
+        .hemat2 {
+            position: absolute;
+            margin-top: 2%;
+            left: 40%;
+        }
+
+        .hemat3 {
+            position: absolute;
+            margin-top: 2%;
+            right: 15%;
+        }
+
+        .self-note {
+            position: relative;
+            top: -50%;
+            margin-top: 10%;
+            margin-bottom: 2%;
+            rotate: 356deg;
+        }
+
+        .line-yellow {
+            background-color: #d7b987;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            rotate: 355deg;
+            width: 10%;
+            height: 6%;
+            transform: translate(-50%, -50%);
+            border-bottom: 10px solid #d7b987;
+        }
+
+        .p-selfnote {
+            font-size: 42px;
+            font-family: GoodMood;
+            top: 20%;
+            color: white;
+        }
+
+        .selfnote2 {
+            font-size: 16px;
+            font-family: Font1;
+            top: 45%;
+            color: white;
+        }
+
+        .onemobile {
+            font-size: 20px;
+            top: 74%;
+            color: #54483a;
+        }
+
+        .line-onemobile {
+            background-color: #dedede;
+            position: absolute;
+            left: 50%;
+            bottom: 15%;
+            rotate: 358deg;
+            opacity: 0.7;
+            width: 40%;
+            height: 10%;
+            transform: translate(-50%, -50%);
+            border-bottom: 10px solid #dedede;
+        }
+
+        .thankgod {
+            width: 580px;
+            margin-right: 5%;
+            border-top-right-radius: 3%;
+            height: auto;
+        }
+
+        .hr3 {
+            border: 1px solid black;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            position: absolute;
+            left: 5%;
+            bottom: 95%;
+            width: 70%;
+        }
+
+        #hr3-1 {
+            position: absolute;
+            left: 5%;
+            bottom: 93.5%;
+            width: 70%;
+        }
+
+        #hr3-2 {
+            position: absolute;
+            left: 5%;
+            bottom: 92.1%;
+            width: 70%;
+        }
+
+        #hr3-3 {
+            position: absolute;
+            left: 5%;
+            bottom: 89%;
+            width: 70%;
+        }
+
+        #hr3-4 {
+            position: absolute;
+            left: -4%;
+            bottom: 84%;
+            width: 85%;
+        }
+
+        #hr3-5 {
+            position: absolute;
+            left: 10%;
+            bottom: 81.5%;
+            width: 15%;
+            rotate: 90deg;
+        }
+
+        #hr3-6 {
+            position: absolute;
+            left: 52%;
+            bottom: 81.3%;
+            width: 16%;
+            rotate: 90deg;
+        }
+
+        #hr3-7 {
+            position: absolute;
+            left: 5%;
+            bottom: 25.5%;
+        }
+
+        #hr3-8 {
+            position: absolute;
+            left: 5%;
+            bottom: 24%;
+        }
+
+        #hr3-9 {
+            position: absolute;
+            left: 5%;
+            bottom: 15%;
+        }
+
+        #hr3-10 {
+            position: absolute;
+            left: 1%;
+            bottom: 5%;
+            width: 25%;
+            border: 3px solid black;
+        }
+
+        #hr3-11 {
+            position: absolute;
+            left: 55%;
+            bottom: 5%;
+            width: 25%;
+            border: 3px solid black;
+        }
+
+        #hr3-12 {
+            position: absolute;
+            top: 103.5%;
+            rotate: 90deg;
+            width: 7%;
+            left: 17%;
+        }
+
+        #hr3-13 {
+            position: absolute;
+            top: 102.5%;
+            rotate: 90deg;
+            width: 7%;
+            left: 60%;
+        }
+
+        #hr3-14 {
+            top: 130%;
+        }
+
+        #hr3-15 {
+            top: 132%;
+        }
+
+        #hr3-16 {
+            top: 134%;
+        }
+
+        #hr3-17 {
+            top: 136%;
+        }
+        #hr3-18 {
+            top: 143.5%;
+            width: 581px;
+            height: 5%;
+            left: -10%;
+            background-color: #86a1aa;
+            border: 10px solid #86a1aa;
+        }
+
+        .p-thankgod {
+            text-align: center;
+            margin: 0%;
+            padding: 0%;
+            position: absolute;
+            top: 4%;
+            font-size: 30px;
+        }
+
+        #thankgod2 {
+            top: 5.7%;
+            font-size: 16px;
+            left: 49%;
+            margin-right: -20%;
+        }
+
+        #thankgod3 {
+            top: 7.1%;
+            font-size: 16px;
+            left: 49%;
+            margin-right: -20%;
+        }
+
+        #thankgod4 {
+            top: 9.7%;
+            font-size: 32px;
+            left: 49%;
+            margin-right: -20%;
+        }
+
+        .keuntungan1 {
+            width: 530px;
+            position: absolute;
+            left: 4%;
+            bottom: 79%;
+            rotate: 2deg;
+        }
+
+        #keuntungan2 {
+            position: absolute;
+            font-family: GoodMood;
+            top: 15%;
+            margin: 0%;
+            padding: 0%;
+            font-size: 28px;
+        }
+
+        #keuntungan3 {
+            position: absolute;
+            font-family: GoodMood;
+            top: 18.5%;
+            left: 16%;
+            margin: 0%;
+            padding: 0%;
+            font-size: 34px;
+        }
+
+        #keuntungan4 {
+            position: absolute;
+            font-family: Font1;
+            top: 18.5%;
+            left: 46%;
+            margin: 0%;
+            padding: 0%;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        #keuntungan5 {
+            position: absolute;
+            font-family: Font1;
+            top: 18.5%;
+            left: 80%;
+            margin: 0%;
+            padding: 0%;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        #keuntungan6 {
+            position: absolute;
+            font-family: Font1;
+            top: 24.5%;
+            left: 40%;
+            margin: 0%;
+            padding: 0%;
+            font-size: 24px;
+        }
+
+        .frame {
+            height: 5%;
+            width: 90%;
+            border: 2px solid black;
+            position: absolute;
+            top: 40%;
+            left: 3%;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        #dotted {
+            position: absolute;
+            top: 42.5%;
+            rotate: 90deg;
+            border: dotted;
+            width: 16%;
+            left: 20%;
+        }
+        #lorem {
+            top: 40%;
+            font-size: 24px;
+            left: 52%;
+        }
+        .goal {
+            position: absolute;
+            font-family: GoodMood;
+            font-size: 74px;
+            bottom: 49%;
+            left: 40%;
+        }
+
+        .goal1 {
+            position: absolute;
+            font-family: GoodMood;
+            font-size: 40px;
+            top: 50.5%;
+            left: 9%;
+        }
+
+        #goal2 {
+            top: 112.8%;
+            color: white;
+            font-size: 70px;
+            left: 32%;
+        }
+
+        .start {
+            position: absolute;
+            top: 54.5%;
+            left: 3.7%;
+            font-family: Font1;
+            font-size: 12px;
+        }
+
+        .level {
+            position: absolute;
+            left: 28%;
+            top: 56%;
+        }
+
+        #line-yellow2 {
+            background-color: #d7b987;
+            position: absolute;
+            left: 42%;
+            top: 57.5%;
+            rotate: 80deg;
+            width: 4%;
+            height: 2%;
+            transform: translate(-50%, -50%);
+            border-bottom: 10px solid #d7b987;
+        }
+
+        #line-yellow3 {
+            background-color: #d7b987;
+            position: absolute;
+            left: 40%;
+            top: 111.5%;
+            rotate: 93deg;
+            width: 5%;
+            height: 3%;
+            transform: translate(-50%, -50%);
+            border-bottom: 10px solid #d7b987;
+        }
+
+        .rectangle {
+            position: absolute;
+            width: 60%;
+            height: 6%;
+            top: 58%;
+            left: 18%;
+            rotate: 358deg;
+        }
+        #red {
+            background-color: #e01f22;
+        }
+
+        #red2 {
+            background-color: #e01f22;
+            top: 72%;
+            left: 46.5%;
+            width: 5%;
+            height: 3.5%;
+            rotate: 85deg;
+        }
+
+        #red3 {
+            background-color: #e01f22;
+            top: 112.5%;
+            left: 13%;
+            width: 73%;
+            height: 10%;
+            rotate: 2deg;
+        }
+
+        #red4 {
+            background-color: #e01f22;
+            top: 138%;
+            rotate: 0deg;
+            height: 2.5%;
+        }
+
+        #red5 {
+            background-color: #e01f22;
+            margin-top: 10%;
+            top: 138%;
+            rotate: 0deg;
+            height: 2.5%;
+        }
+
+        #kumpulpoin {
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 10px;
+            rotate: 0deg;
+            top: 91%;
+            left: 19%;
+            height: 2.2%;
+        }
+
+        #bg {
+            background-color: #e0e0e0;
+            height: 1.5%;
+            width: 50%;
+            top: 60.5%;
+            left: 22%;
+            rotate: 0deg;
+        }
+
+        #bg2 {
+            background-color: #e0e0e0;
+            height: 1.5%;
+            width: 25%;
+            top: 120.3%;
+            left: 47%;
+            rotate: 0deg;
+        }
+
+        .nabungnyala {
+            position: absolute;
+            font-family: Font1;
+            top: 60%;
+            left: 24.5%;
+        }
+
+        /* css table 3d */
+        .bodytable {
+            position: absolute;
+            --border: 4px;
+            --width: 400px;
+            --height: 100px;
+            --outline: 12px;
+            --translate: 8px;
+            --skew-angle: 45deg;
+        }
+
+        .bordertable {
+            border: var(--border) solid black;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            width: var(--width);
+            height: var(--height);
+        }
+
+        .bottom-outline {
+            width: var(--width);
+            height: var(--outline);
+            border-top-width: 0px !important;
+            transform: skew(var(--skew-angle)) translateX(var(--translate));
+        }
+
+        /* height would be implicitly same as box */
+        .right-outline {
+            width: var(--outline);
+            border-left-width: 0 !important;
+            border-bottom-width: 0 !important;
+            transform: skew(0deg, var(--skew-angle)) translateY(var(--translate));
+        }
+
+        .positionbox {
+            position: absolute;
+            top: 363%;
+            left: 44.5%;
+        }
+
+
+        /* end css 3d box */
+        .imgpoinseru {
+            position: absolute;
+            width: 600px;
+            top: 71.3%;
+            left: 0%;
+        }
+
+        #img2 {
+            position: absolute;
+            width: 600px;
+            left: 0%;
+            top: 125%;
+        }
+
+        .ternyatapoinseru {
+            position: absolute;
+            top: 73%;
+            font-family: PWSimpleHandwriting;
+            font-size: 20px;
+        }
+
+        #poinseru1 {
+            top: 74.5%;
+        }
+
+        #poinseru2 {
+            top: 77.5%;
+            font-family: GoodMood;
+            font-size: 36px;
+        }
+
+        #poinseru3 {
+            top: 82.5%;
+            left: 35%;
+            font-family: Font1;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        #poinseru4 {
+            top: 82.5%;
+            left: 75%;
+            font-family: Font1;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        #poinseru5 {
+            top: 84.5%;
+            left: 50%;
+            font-family: GoodMood;
+            font-size: 32px;
+            text-align: left;
+            margin-right: -30%;
+        }
+
+        #poinseru6 {
+            top: 91.4%;
+            left: 49%;
+            font-family: Font1;
+            font-size: 90%;
+            text-align: left;
+            margin-right: -30%;
+            font-family: Font1;
+        }
+
+        #poinseru7 {
+            top: 94.5%;
+            left: 50.5%;
+            font-family: GoodMood;
+            text-align: center;
+            margin-right: -30%;
+            font-family: Font1;
+        }
+
+        #poinseru8 {
+            top: 118%;
+            left: 45%;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        #poinseru9 {
+            top: 138.3%;
+            left: 47%;
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            font-family: GoodMood;
+        }
+
+        #poinseru10 {
+            top: 140%;
+            left: 47%;
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            font-family: GoodMood;
+        }
+
+        #arrowbox {
+            width: 85%;
+            top: 78%;
+            left: 8%;
+        }
+
+        .p-tokped {
+            position: absolute;
+            top: 103.5%;
+            text-align: left;
+            left: 17%;
+            font-size: 20px;
+        }
+
+        #tokped {
+            width: 43%;
+            top: 102%;
+            left: 7%;
+            rotate: 1deg;
+        }
+
+        #tokped2 {
+            left: 40%;
+        }
+
+        #tokped3 {
+            width: 43%;
+            top: 101%;
+            left: 51%;
+            rotate: 1deg;
+        }
+
+        #tokped4 {
+            left: 60%;
+            top: 102.5%;
+        }
+
+        #tokped5 {
+            left: 83%;
+            top: 102.5%;
+        }
+        .footer1 {
+            position: absolute;
+            color: #86a1aa;
+            width: 600px;
+            top: 20%;
+            height: 5%;
+            background-color: #86a1aa;
+            opacity: 0.1;
+        }
+        .footer2{
+            position: absolute;
+            color: #e01f22;
+            width: 600px;
+            top: 22%;
+            height: 5%;
+            background-color: #e01f22;
+        }
+        #hematbiaya1 {
+            position: absolute;
+            top: -48%;
+        }
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <table class="main" width="600px">
+            <!-- Top Border-->
+            <tr>
+                <td height="8" style="background-color: #171a1b;"></td>
+            </tr>
+            <!-- Logo Section -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td><img style="width: 100%;" src="assets/header.jpg"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Banner Image -->
+            <tr>
+                <td class="container">
+                    <img class="belong-to" src="assets/belong-to.jpg" />
+                    <p class="centered jurnal"><b>Jurnal #FinanciallyFit ini<br />milik<br /> </b></p>
+                    <p class="centered nama-customer">DION</p>
+                    <img src="assets/line.jpg" class="centered line-img">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="kilas-balik">Kilas Balik</span>
+                    <span class="periode">Juni 2022</span>
+                    <hr class="hr1">
+                    <hr class="hr2">
+                    <p class="p-kilas-balik">Tak terasa sudah masuk bulan yang baru</p>
+                    <hr class="hr2">
+                    <p class="p-kilas-balik">Bulan ini harus bisa lebih baik lagi, termasuk</p>
+                    <hr class="hr2">
+                    <p class="p-kilas-balik">soal keuangan agar bisa Financially Fit</p>
+                    <br />
+                    <hr class="hr2">
+                    <p class="p-kilas-balik">Ini dia rekap transaksi dan urusan</p>
+                    <hr class="hr2">
+                    <p class="p-kilas-balik">perbankanku bersama OCBC NISP</p>
+                    <hr class="hr2">
+                    <p class="p-kilas-balik">bulan kemarin</p>
+                    <hr class="hr2">
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <img class="rekap-img" src="assets/rekap.jpg">
+                    <p class="recap-centered">REKAP BULAN JUNI</p>
+                    <p class="p-float-left">Total Saldo Gabungan</p>
+                    <p class="p-float-right">Rp50.000.000</p>
+                    <p class="p-float-left" style="top: 30%;">Status Nyala</p>
+                    <p class="p-float-right" style="top: 30%;">Sudah bergabung</p>
+                    <p class="p-float-left" style="top: 40%">Level Nyala</p>
+                    <p class="p-float-right" style="top: 40%;">Level 3</p>
+                    <p class="p-float-left" style="top: 50%;">Total Poinseru</p>
+                    <p class="p-float-right" style="top: 50%;">1500 poin</p>
+                    <p class="p-float-left" style="top: 60%;">Financial Fitness Score</p>
+                    <p class="p-float-right" style="top: 60%;">65</p>
+                    <div class="text-and-line">
+                        <span class="line"></span>
+                        <span class="line-vertical"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <img class="rekap" src="assets/kilas-balik.jpg">
+                    <p class="recap-centered">INI KILAS BALIK SELENGKAPNYA</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <img class="transfer" src="assets/transfer.jpg">
+                    <span class="transfer2"></span>
+                    <p class="transfer1">TRANSFER</p>
+                    <img class="tarik-tunai" src="assets/tarik-tunai.jpg">
+                    <span class="tarik-tunai2"></span>
+                    <p class="tarik-tunai1">TARIK TUNAI</p>
+                    <img class="pembayaran" src="assets/pembayaran.jpg">
+                    <span class="pembayaran2"></span>
+                    <p class="pembayaran1">PEMBAYARAN/<br />PEMBELIAN</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <span class="p-transfer">7X</span>
+                    <span class="p-tarik-tunai">6X</span>
+                    <span class="p-pembayaran">15X</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <br />
+                    <p class="centered" id="hematbiaya1">KARENA DAPAT GRATIS TRANSAKSI,</p>
+                    <p class="centered">INI JUMLAH BIAYA YANG AKU HEMAT</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <img class="hemat1" src="assets/transfer2.jpg">
+                    <span class="transfer4"></span>
+                    <p class="transfer3">TRANSFER</p>
+                    <p class="transfer5">Rp60.000</p>
+                    <img class="hemat2" src="assets/tarik-tunai2.jpg">
+                    <span class="tarik-tunai4"></span>
+                    <p class="tarik-tunai3">TARIK TUNAI</p>
+                    <p class="tarik-tunai5">Rp40.000</p>
+                    <img class="hemat3" src="assets/pembelian.jpg">
+                    <span class="pembayaran4"></span>
+                    <p class="pembayaran3">PEMBAYARAN/<br />PEMBELIAN</p>
+                    <p class="pembayaran5">Rp50.000</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <img class="self-note" src="assets/self-note.jpg">
+                    <span class="line-yellow"></span>
+                    <p class="centered p-selfnote">Self-note</p>
+                    <p class="centered selfnote2">Biar transaksi jadi<br />lebih gampang</p>
+                    <span class="line-onemobile"></span>
+                    <a class="centered onemobile" href="https://ocbc.id/home" target="_blank">Download ONe MOBILE</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                        <img class="thankgod" src="assets/thank-god.jpg">
+                        <p class="p-thankgod centered">Thank God,</p>
+                        <hr class="hr3">
+                        <p class="p-thankgod centered" id="thankgod2">di Nyala, aku makin rutin nabung dan investasi.
+                        </p>
+                        <hr class="hr3" id="hr3-1">
+                        <p class="p-thankgod centered" id="thankgod3">Dari saldo gabungan sekarang, aku termasuk di</p>
+                        <hr class="hr3" id="hr3-2">
+                        <p class="p-thankgod centered" id="thankgod4">NYALA LEVEL 4</p>
+                        <hr class="hr3" id="hr3-3">
+                        <img class="keuntungan1" src="assets/keuntungan.jpg">
+                        <p class="centered" id="keuntungan2">INI KEUNTUNGAN YANG BISA DIDAPATKAN</p>
+                        <hr class="hr3" id="hr3-4">
+                        <hr class="hr3" id="hr3-5">
+                        <hr class="hr3" id="hr3-6">
+                        <p class="centered" id="keuntungan3">PER BULAN<br />GRATIS</p>
+                        <p class="centered" id="keuntungan4">- Transfer dengan BI Fast<br />- Tarik Tunai<br />-
+                            Pembelian/pembayaran<br />- Transfer online</p>
+                        <p class="centered" id="keuntungan5">Unlimited<br />30x<br />30x<br />30x</p>
+                        <p class="centered" id="keuntungan6">Ini perjalananku,<br /> di level sebelumnya</p>
+                        <span class="frame"></span>
+                        <span class="hr3" id="dotted"></span>
+                        <p class="centered" id="lorem">Lorem ipsum</p>
+                        <span class="goal">GOAL</span>
+                        <span class="goal1">PERTAHANKAN LEVEL, JANGAN KASIH KENDOR!</span>
+                        <span class="start">START<br />HERE</span>
+                        <table>
+                            <tr>
+                                <td class="level">
+                                    <span id="level1">Level
+                                        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level
+                                        2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level 3</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <span class="rectangle" id="red"></span>
+                        <span class="line-yellow" id="line-yellow2"></span>
+                        <span class="rectangle" id="bg"></span>
+                    <div>
+                        <p class="nabungnyala"><u>NABUNG DAN INVESTASI DI NYALA</u></p>
+                        <img class="imgpoinseru" src="assets/ternyata-poinseru.jpg" alt="">
+                        <span class="rectangle" id="red2"></span>
+                        <p class="centered ternyatapoinseru">Ternyata <span style="color: white;">Poinseru</span> aku
+                            masih</p>
+                        <span class="hr3" id="hr3-7"></span>
+                        <p class="centered ternyatapoinseru" id="poinseru1">on-track buat raih wishlist</p>
+                        <span class="hr3" id="hr3-8"></span>
+                        <img class="imgpoinseru" id="arrowbox" src="assets/arrow-box.png">
+                        <p class="centered ternyatapoinseru" id="poinseru2">INI POINKU YANG TERKUMPUL</p>
+                        <div>
+                            <span class="centered ternyatapoinseru" id="poinseru3">Transaksi elektronik<br />Kartu
+                                debit<br />Bonus plus<br />Tabungan</span>
+                            <span class="centered ternyatapoinseru" id="poinseru4"><b>70 P<br />85 P<br />100 P<br />90
+                                    P</b></span>
+                        </div>
+                        <div>
+                            <span class="hr3" id="hr3-9"></span>
+                            <p class="centered ternyatapoinseru" id="poinseru5">TOTAL KESELURUHAN POIN HINGGA BULAN
+                                KEMARIN <b>1000 P</b></p>
+                        </div>
+                    </div>
+                    <span class="rectangle" id="kumpulpoin"></span>
+                    <p class="centered ternyatapoinseru" id="poinseru6"><u>LIHAT CARA MENGUMPULKAN POIN SERU DI SINI</u>
+                    </p>
+                    <span class="hr3" id="hr3-10"></span>
+                    <span class="hr3" id="hr3-11"></span>
+                    <p class="centered ternyatapoinseru" id="poinseru7">INI REWARD<br />YANG BISA AKU DAPATKAN</p>
+                    <div>
+                        <img class="imgpoinseru" id="tokped" src="assets/voucher-grab.jpg">
+                        <span class="centered p-tokped">Voucher<br />Tokopedia</span>
+                        <span class="hr3" id="hr3-12"></span>
+                        <span class="centered p-tokped" id="tokped2"><b>10.000 P</b></span>
+                    </div>
+                    <div>
+                        <img class="imgpoinseru" id="tokped3" src="assets/voucher-grab.jpg">
+                        <span class="centered p-tokped" id="tokped4">Voucher<br />Grab</span>
+                        <span class="hr3" id="hr3-13"></span>
+                        <span class="centered p-tokped" id="tokped5"><b>10.000 P</b></span>
+                    </div>
+                    <span class="rectangle" id="red3"></span>
+                    <span class="line-yellow" id="line-yellow3"></span>
+                    <span class="goal" id="goal2">TO DO LIST</span>
+                    <span class="rectangle" id="bg2"></span>
+                    <p class="centered ternyatapoinseru" id="poinseru8">&radic; Daftar Bonus Plus<br />&radic; Tukar
+                        Poinseru<br />&radic; Perbanyak transaksi buat kumpulin Poin<br />&radic; Cek reward lainnya,
+                        <u>BUKA <a class="onemobile" href="https://raih.id/" target="_blank"><b>RAIH.ID</b></a></u>
+                    </p>
+                    <div>
+                        <img class="imgpoinseru" id="img2" src="assets/check.jpg" alt="">
+                        <p class="centered ternyatapoinseru" id="nyalakan1">Harus terus nyalakan semangat</p>
+                        <span class="hr3" id="hr3-14"></span>
+                        <p class="centered ternyatapoinseru" id="nyalakan2">jangan kasih kendor biar bisa
+                            otot-otot</p>
+                        <span class="hr3" id="hr3-15"></span>
+                        <p class="centered ternyatapoinseru" id="nyalakan3">keuangan tetap kuat.</p>
+                        <span class="hr3" id="hr3-16"></span>
+                        <p class="centered ternyatapoinseru" id="nyalakan4">Yakin, bulan selanjutnya bisa lebih baik
+                            lagi.</p>
+                        <span class="hr3" id="hr3-17"></span>
+                        <span class="rectangle" id="red4"></span>
+                        <p class="centered ternyatapoinseru" id="poinseru9">TIDAK ADA YANG TIDAK BISA</p>
+                        <span class="rectangle" id="red5"></span>
+                        <p class="centered ternyatapoinseru" id="poinseru10">JADI FINANCIALLY FIT</p>
+                        <span class="hr3" id="hr3-18"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="footer1" style="margin-top: 230%;"></span>
+                    <span class="footer2" style="margin-top: 228%;"></span>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
